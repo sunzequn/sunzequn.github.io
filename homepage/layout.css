@@ -150,3 +150,13 @@ footer p {
     width:200px; 
     height:100;
 }
+
+.div_foot {
+    position: absolute;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    width: 100%;
+    font-style:italic;
+    color:#888888;
+}
