@@ -52,8 +52,8 @@ header > h2 {
 }
 
 section > h1 {
-    font-size: 140%;
-    line-height: 120%;
+    font-size: 120%;
+    line-height: 100%;
     color: #880000;
     /* text-transform: uppercase; */
 }
