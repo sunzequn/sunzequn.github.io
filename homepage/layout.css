@@ -1,3 +1,8 @@
+
+details > summary:focus{
+    outline: none;
+}
+
 body {
     font-family: Georgia, Verdana, Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -27,17 +32,19 @@ a:hover, a:focus {
 }
 
 p, address {
+    font-size: 100%;
     margin-bottom: 0;
 }
 
 .me {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    margin-bottom: 20px;
-    margin-left: 30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-left: 35px;
 }
 
 header > h1 {
@@ -48,6 +55,8 @@ header > h1 {
 }
 
 header > h2 {
+    font-size: 120%;
+    line-height: 100%;
     color: #880000;
 }
 
@@ -151,7 +160,7 @@ footer p {
     height:100;
 }
 
-.div_foot {
+/* .div_foot {
     position: absolute;
     height: 50px;
     text-align: center;
@@ -159,4 +168,4 @@ footer p {
     width: 100%;
     font-style:italic;
     color:#888888;
-}
+} */
