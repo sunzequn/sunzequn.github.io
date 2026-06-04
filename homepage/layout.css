@@ -5,30 +5,44 @@ details > summary:focus{
 
 body {
     font-family: Georgia, Verdana, Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 15px;
+    line-height: 1.55;
+    color: #000000;
+    background: #ffffff;
     /* border-top: 5px solid #008B8B; */
     /* border-bottom: 5px solid #008B8B; */
 }
 
 .container {
-    margin-top: 50px;
-    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0 40px;
+    width: auto;
+    max-width: 1100px;
+    margin: 32px auto 0;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+.container .columns {
+    float: none;
+    margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: #214C9A;
+    color: #0645ad;
+    text-decoration: underline;
     /* font-weight:bold; */
     /*background-color: rgba(39, 168, 34, 0.06);*/
 }
 
 a:visited {
-    text-decoration: none;
+    color: #0645ad;
 }
 
 a:hover, a:focus {
-    color: #D9671E;
+    color: #003c8f;
     text-decoration: underline;
 }
 
@@ -38,14 +52,15 @@ p, address {
 }
 
 .me {
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    margin-bottom: 10px;
-    margin-top: 15px;
-    margin-left: 35px;
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    margin: 0 0 28px;
+    display: block;
+    box-shadow: none;
 }
 
 header > h1 {
@@ -56,24 +71,29 @@ header > h1 {
 }
 
 header > h2 {
-    font-size: 120%;
-    line-height: 100%;
-    color: #880000;
+    margin: 28px 0 12px;
+    font-size: 1.15rem;
+    line-height: 1.4;
+    color: #0645ad;
+    letter-spacing: 0;
+    font-weight: 600;
 }
 
 section > h1 {
-    font-size: 120%;
-    line-height: 100%;
-    color: #880000;
+    margin: 0 0 14px;
+    font-size: 1.15rem;
+    line-height: 1.4;
+    color: #0645ad;
+    font-weight: 600;
     /* text-transform: uppercase; */
 }
 
 .container > header p, .container > header address {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
 
 .container > header p:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
 
 section {
@@ -81,7 +101,7 @@ section {
 }
 
 article {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 article > header > h1 {
@@ -102,7 +122,7 @@ article > header > span + span::before {
 }
 
 article > header > span {
-    color: #008B8B;
+    color: inherit;
     font-size: 100%;
 }
 
@@ -127,6 +147,262 @@ em {
     font-style: normal;
     font-weight: bold;
     /*margin-right: 6px;*/
+}
+
+header.six.columns,
+.ten.columns {
+    margin-bottom: 24px;
+}
+
+.six.columns {
+    flex: 0 1 340px;
+    width: auto;
+}
+
+.ten.columns {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+}
+
+.profile-intro {
+    margin-bottom: 32px;
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #000000;
+}
+
+.profile-copy h1 {
+    margin: 0 0 12px;
+    font-size: 1.55rem;
+    line-height: 1.2;
+    color: #0645ad;
+    font-weight: 600;
+}
+
+.profile-role {
+    margin: 0 0 14px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.profile-summary {
+    margin: 0 0 16px;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: #000000;
+}
+
+.profile-keywords {
+    margin: 0 0 16px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #0645ad;
+    font-weight: 400;
+    white-space: normal;
+}
+
+.profile-keywords span {
+    display: block;
+    margin-right: 0;
+}
+
+.profile-keywords strong {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.profile-location,
+.profile-links,
+.profile-actions {
+    margin: 0 0 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.profile-location {
+    font-size: 0.92rem;
+}
+
+.profile-location i,
+.profile-links i {
+    margin-right: 6px;
+    color: #000000;
+}
+
+.profile-links a,
+.profile-actions a {
+    color: #0645ad;
+}
+
+.profile-links a {
+    display: inline;
+    margin-right: 12px;
+}
+
+.profile-actions {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 12px;
+    row-gap: 4px;
+    margin-bottom: 0;
+}
+
+.profile-actions span {
+    display: contents;
+}
+
+.profile-actions a {
+    font-size: 0.92rem;
+}
+
+.sidebar-label {
+    margin: 16px 0 8px;
+    font-size: 1rem;
+    color: #0645ad;
+}
+
+.hero-panel {
+    margin-bottom: 22px;
+    padding-top: 0;
+}
+
+.hero-title {
+    margin: 0 0 10px;
+    font-size: 1.15rem;
+    line-height: 1.35;
+    color: #0645ad;
+    font-weight: 600;
+}
+
+.hero-summary {
+    max-width: none;
+    margin: 0 0 10px;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: #000000;
+}
+
+.hero-highlights {
+    margin-bottom: 0;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: #0645ad;
+    font-weight: 400;
+}
+
+.hero-highlights p {
+    margin-bottom: 0;
+}
+
+.hero-anchor {
+    margin: 0;
+    font-size: 1rem;
+    color: #0645ad;
+}
+
+.overview-title {
+    margin: 0 0 12px;
+    font-size: 1.15rem;
+    line-height: 1.4;
+    color: #0645ad;
+}
+
+header article p {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: #000000;
+}
+
+.plain-text-list p {
+    margin: 0;
+}
+
+.publications-list p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.publications-list details p {
+    margin-bottom: 8px;
+}
+
+.plain-text-list i {
+    display: none;
+}
+
+.news-list i {
+    display: inline-block;
+    margin-right: 6px;
+    color: #000000;
+}
+
+.travel-list i {
+    display: inline-block;
+    margin-right: 6px;
+    color: #000000;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        display: block;
+        margin-top: 24px;
+        padding: 0 16px;
+    }
+
+    .container .columns,
+    .six.columns,
+    .ten.columns {
+        width: auto;
+    }
+
+    .me {
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .profile-copy h1 {
+        font-size: 1.4rem;
+    }
+
+    .profile-role,
+    .profile-summary,
+    .profile-keywords,
+    .profile-location,
+    .profile-links,
+    .profile-actions,
+    .hero-summary,
+    .hero-highlights,
+    header article p {
+        font-size: 1rem;
+    }
+
+    .profile-actions a,
+    .profile-links a {
+        display: block;
+        margin: 0 0 6px;
+    }
+
+    .profile-actions {
+        display: block;
+    }
+
+    .profile-actions span {
+        display: block;
+    }
 }
 
 @media print {
