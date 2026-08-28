@@ -336,6 +336,27 @@ header article p {
     margin-bottom: 8px;
 }
 
+.new-badge,
+.highlight-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.5em;
+    height: 3.4em;
+    margin-left: 5px;
+    padding: 0;
+    background: #ff1f45;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.55em;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+    clip-path: polygon(50% 0, 60% 11%, 74% 4%, 80% 18%, 96% 18%, 92% 34%, 100% 46%, 87% 56%, 92% 72%, 76% 74%, 68% 88%, 55% 80%, 43% 100%, 33% 84%, 18% 92%, 16% 76%, 0 70%, 10% 56%, 0 45%, 13% 35%, 8% 19%, 25% 18%, 32% 4%, 45% 12%);
+}
+
 .plain-text-list i {
     display: none;
 }
